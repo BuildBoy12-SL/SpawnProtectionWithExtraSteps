@@ -37,7 +37,7 @@ namespace SpawnProtectionWithExtraSteps
         public void OnHurting(HurtingEventArgs ev)
         {
             if (ev.Attacker == null ||
-                !plugin.Config.SpawnProtectionTimes.TryGetValue(ev.Target.Team, out float duration) ||
+                !plugin.Config.SpawnProtectionTimes.TryGetValue(ev.Target.Role.Team, out float duration) ||
                 !spawnTimes.TryGetValue(ev.Target, out float time))
                 return;
 

@@ -19,19 +19,19 @@ namespace SpawnProtectionWithExtraSteps
         private EventHandlers eventHandlers;
 
         /// <inheritdoc />
-        public override string Author { get; } = "Build";
+        public override string Author => "Build";
 
         /// <inheritdoc />
-        public override string Name { get; } = "SpawnProtectionWithExtraSteps";
+        public override string Name => "SpawnProtectionWithExtraSteps";
 
         /// <inheritdoc/>
-        public override string Prefix { get; } = "SpawnProtectionWithExtraSteps";
+        public override string Prefix => "SpawnProtectionWithExtraSteps";
 
         /// <inheritdoc />
-        public override PluginPriority Priority { get; } = PluginPriority.Lower;
+        public override PluginPriority Priority => PluginPriority.Lower;
 
         /// <inheritdoc/>
-        public override Version RequiredExiledVersion { get; } = new Version(4, 1, 7);
+        public override Version RequiredExiledVersion { get; } = new Version(5, 0, 0);
 
         /// <inheritdoc/>
         public override Version Version { get; } = new Version(1, 0, 0);
